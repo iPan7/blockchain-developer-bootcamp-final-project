@@ -1,6 +1,6 @@
 # blockchain-developer-bootcamp-final-project
 
-It is evident that the push for greener technology in all aspects of industry will continue. This project aims to highlight a potential use case that incentivizes car manufacturers to sell cars that a more environmentally friendly through the use of the Ethereum blockchain. Vehicles that do not meet emission standards have a portion of every sale sent to an eco sustainment fund instead of the full amount going directly to the seller.
+It is evident that the push for greener technology in all aspects of industry will continue. This project aims to highlight a potential use case that incentivizes car manufacturers to sell cars that are more environmentally friendly through the use of the Ethereum blockchain. Vehicles that do not meet emission standards have a portion of every sale sent to an eco sustainment fund instead of the full amount going directly to the seller.
 
 To do so, it deploys 3 smart contracts.
 
