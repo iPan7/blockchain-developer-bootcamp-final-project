@@ -7,7 +7,7 @@ import "./App.css";
 import '@metamask/legacy-web3';
 
 class App extends Component {
-  state = { loaded: false, kycAddress: "0x123", tokenSaleAddress: "", userTokens: 0 };
+  state = { loaded: false, kycAddress: "Enter wallet address", tokenSaleAddress: "", userTokens: 0 };
 
   componentDidMount = async () => {
     try {
@@ -86,13 +86,15 @@ class App extends Component {
       <div className="App">
       <h1>SaltCoin, the Cryptocurrency for Salty People</h1>
 
-<h2>Enable your account</h2>
+<h2>Step 1: Whitelist your account by copy pasting your Metamask wallet address here.</h2>
 Address to allow: <input type="text" name="kycAddress" value={this.state.kycAddress} onChange={this.handleInputChange} />
 <button type="button" onClick={this.handleKycSubmit}>Add Address to Whitelist</button>
-<h2>Buy SaltCoin</h2>
-        <p>Send Ether to this address: {this.state.tokenSaleAddress}</p>
-        <p>You have {this.state.userTokens} Salt Coins</p>
+<h2>Step 2: Buy SaltCoin by clicking the buy button</h2>
+        <p>When you click the button, ether will be sent to this address: {this.state.tokenSaleAddress}</p>
         <button type="button" onClick={this.handleBuyToken}>Buy a token</button>
+        <h2>Step 3: See your Salt Coin Balance below!</h2>
+        <p>You have {this.state.userTokens} Salt Coins</p>
+
       </div>
     );
   }
