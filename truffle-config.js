@@ -11,7 +11,7 @@ networks: {
         return new HDWalletProvider(process.env.MNEMONIC, "http://127.0.0.1:7545", MetaMaskAccountIndex )
     },
     port: 7545,
-    network_id: "*",
+    network_id: 1337,
     host: "127.0.0.1"
     }
 },

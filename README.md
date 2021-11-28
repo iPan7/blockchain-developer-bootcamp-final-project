@@ -14,12 +14,12 @@
 
 ### Contracts
 
-- Run `yarn install` in project root to install Truffle build and smart contract dependencies
+- Run `truffle unbox react` in project root to install Truffle build and smart contract dependencies
 - Run local testnet in port `7545` with an Ethereum client, e.g. Ganache
 - `truffle migrate --network develop`
 - `truffle console --network develop`
 - Run tests in Truffle console: `test`
-- `development` network id is 1337, remember to change it in Metamask as well!
+- `develop` network id is 1337, remember to change it in Metamask as well!
 
 ### Frontend
 
@@ -31,7 +31,6 @@
 
 - `truffle migrate --network develop`
 - `truffle console --network develop`
-- `let rr = await Rentals.deployed()`
 
 - Open local ui from `http://localhost:3000`
 - Make sure your Metamask localhost network is in port `7545` and chain id is `5777`.
