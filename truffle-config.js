@@ -18,6 +18,10 @@ networks: {
 compilers: {
     solc: {
     version: "0.6.1",
+    optimizer: {
+      enabled: true,
+      runs: 200
+    }
     }
 }
 };

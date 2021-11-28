@@ -7,7 +7,7 @@ import "./App.css";
 import '@metamask/legacy-web3';
 
 class App extends Component {
-  state = { loaded: false, kycAddress: "0x123" };
+  state = { loaded: false, kycAddress: "0x123", tokenSaleAddress: "", userTokens: 0 };
 
   componentDidMount = async () => {
     try {
@@ -37,7 +37,8 @@ class App extends Component {
 
         // Set web3, accounts, and contract to the state, and then proceed with an
         // example of interacting with the contract's methods.
-        this.setState({ loaded:true });
+        this.listenToTokenTransfer();
+        this.setState({ loaded:true, tokenSaleAddress: this.myTokenSale._address }, this.updateUserTokens);
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -46,6 +47,20 @@ class App extends Component {
       console.error(error);
     }
   };
+
+  handleBuyToken = async () => {
+    await this.myTokenSale.methods.buyTokens(this.accounts[0]).send({from: this.accounts[0], value: 1});
+  }
+
+  updateUserTokens = async() => {
+    let userTokens = await this.myToken.methods.balanceOf(this.accounts[0]).call();
+    this.setState({userTokens: userTokens});
+  }
+
+  listenToTokenTransfer = async() => {
+    this.myToken.events.Transfer({to: this.accounts[0]}).on("data", this.updateUserTokens);
+  }
+
 
   handleInputChange = (event) => {
     const target = event.target;
@@ -69,11 +84,15 @@ class App extends Component {
     }
     return (
       <div className="App">
-      <h1>ArmyCoin, the Cryptocurrency for Salty Soldiers</h1>
+      <h1>SaltCoin, the Cryptocurrency for Salty People</h1>
 
 <h2>Enable your account</h2>
 Address to allow: <input type="text" name="kycAddress" value={this.state.kycAddress} onChange={this.handleInputChange} />
 <button type="button" onClick={this.handleKycSubmit}>Add Address to Whitelist</button>
+<h2>Buy SaltCoin</h2>
+        <p>Send Ether to this address: {this.state.tokenSaleAddress}</p>
+        <p>You have {this.state.userTokens} Salt Coins</p>
+        <button type="button" onClick={this.handleBuyToken}>Buy a token</button>
       </div>
     );
   }
