@@ -6,7 +6,6 @@ const chaiBN = require("chai-bn")(BN);
 chai.use(chaiBN);
 
 var chaiAsPromised = require("chai-as-promised");
-const { contracts_build_directory } = require("../truffle-config");
 chai.use(chaiAsPromised);
 
 const expect = chai.expect;
