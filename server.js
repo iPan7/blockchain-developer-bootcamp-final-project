@@ -1,17 +1,12 @@
-const express = require('express');
 const path = require('path');
-const axios = require('axios');
-// Loads env variables
-require('dotenv').config()
+const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3001;
-// Adds json parsing middleware
-app.use(express.json());
-// Setup static directory to serve
-app.use(express.static(path.resolve('client', 'build')));
-
+const publicPath = path.join(__dirname, '..', 'public');
+const port = process.env.PORT || 3000;
+app.use(express.static(publicPath));
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve('client', 'build', 'index.html'));
+   res.sendFile(path.join(publicPath, 'index.html'));
 });
-// console.log that your server is up and running
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+app.listen(port, () => {
+   console.log('Server is up!');
+});
