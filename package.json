@@ -2,6 +2,8 @@
   "homepage": "https://ipan7.github.io/blockchain-developer-bootcamp-final-project/",
   "name": "client",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.13.0"},
   "private": true,
   "dependencies": {
     "@metamask/legacy-web3": "^2.0.0",
