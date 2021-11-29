@@ -20,6 +20,12 @@ networks: {
       },
       network_id: 3
     },
+    rinkeby_infura: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://rinkeby.infura.io/v3/c89e1902724d4ec7ada3264eee142d33", MetaMaskAccountIndex)
+      },
+      network_id: 4
+    },
     goerli_infura: {
       provider: function() {
         return new HDWalletProvider(process.env.MNEMONIC, "https://goerli.infura.io/v3/c89e1902724d4ec7ada3264eee142d33", MetaMaskAccountIndex)
