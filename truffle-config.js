@@ -14,11 +14,11 @@ networks: {
     network_id: "*",
     host: "127.0.0.1"
     },
-    rinkeby_infura: {
+    ropsten_infura: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "https://rinkeby.infura.io/v3/c89e1902724d4ec7ada3264eee142d33", MetaMaskAccountIndex)
+        return new HDWalletProvider(process.env.MNEMONIC, "https://ropsten.infura.io/v3/c89e1902724d4ec7ada3264eee142d33", MetaMaskAccountIndex)
       },
-      network_id: 4
+      network_id: 3
     },
     goerli_infura: {
       provider: function() {
