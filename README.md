@@ -39,6 +39,7 @@
 
 https://youtu.be/FJfWQKXyWXc - Video of app running on Goerli network.
 https://youtu.be/t1QzNfeVjgM - Video of app running on local Ganache network.
+testspassing.png - Shows all 5 unit tests passing for smart contracts.
 
 ## Public Ethereum wallet for certification:
 
@@ -57,7 +58,7 @@ Simple dApp that creates a new crypto currency and has a Payment-layer on top of
 
 ## Directory structure
 
-- `client`: Project's React frontend.
+- `src`: React front end App.js is here.
 - `contracts`: Smart contracts that are deployed in the Ropsten testnet.
 - `migrations`: Migration files for deploying contracts in `contracts` directory.
 - `test`: Tests for smart contracts.
