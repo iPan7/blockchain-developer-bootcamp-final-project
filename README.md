@@ -37,7 +37,8 @@
 
 ## Screencast link
 
-
+https://youtu.be/FJfWQKXyWXc - Video of app running on Goerli network.
+https://youtu.be/t1QzNfeVjgM - Video of app running on local Ganache network.
 
 ## Public Ethereum wallet for certification:
 
