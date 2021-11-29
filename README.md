@@ -50,7 +50,7 @@ Simple dApp that creates a new crypto currency and has a Payment-layer on top of
 1. Enter service web site
 2. Login with Metamask
 3. Add Metamask account to whitelist.
-4. Purchase Salt Coin.
+4. Purchase Salt Coin by clicking on `Buy a Token`. Note that the Metamask transaction will show 0 ETH being traded but this is because 1 SALT coin is equal to 1 wei, and 1 wei is worth 0.000000000000000001 ETH. 
 
 ## Directory structure
 
@@ -61,7 +61,7 @@ Simple dApp that creates a new crypto currency and has a Payment-layer on top of
 
 ## Deployed version url:
 
-https://salt-coin.herokuapp.com
+https://my-app-blockchain-test.herokuapp.com/
 
 ## TODO features
 
