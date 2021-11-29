@@ -23,10 +23,10 @@
     "gh-pages": "^3.2.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node --max_old_space_size=2560 node_modules/.bin/react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "build": "node --max_old_space_size=2560 node_modules/.bin/react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
