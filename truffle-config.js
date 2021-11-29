@@ -13,7 +13,19 @@ networks: {
     port: 7545,
     network_id: "*",
     host: "127.0.0.1"
-    }
+    },
+    ropsten_infura: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://ropsten.infura.io/v3/c89e1902724d4ec7ada3264eee142d33", MetaMaskAccountIndex)
+      },
+      network_id: 3
+    },
+    goerli_infura: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://goerli.infura.io/v3/c89e1902724d4ec7ada3264eee142d33", MetaMaskAccountIndex)
+      },
+      network_id: 5
+    },
 },
 compilers: {
     solc: {
