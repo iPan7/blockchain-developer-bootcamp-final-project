@@ -11,7 +11,6 @@
 
 ### Contracts
 
-- Run `truffle unbox react` in project root to install Truffle build and smart contract dependencies
 - Run local testnet in port `7545` with an Ethereum client, e.g. Ganache
 - `truffle migrate --network develop`
 - `truffle console --network develop`
