@@ -19,7 +19,7 @@
 - `truffle migrate --network develop`
 - `truffle console --network develop`
 - Run tests in Truffle console: `test`
-- `develop` network id is 1337, remember to change it in Metamask as well!
+- `develop` network id is 5777, remember to change it in Metamask as well!
 
 ### Frontend
 
