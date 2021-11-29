@@ -30,7 +30,7 @@
 - Open local ui from `http://localhost:3000`
 - Make sure your Metamask localhost network is in port `7545` and chain id is `5777`.
 
-## Screencast link
+## Screencast links
 
 https://youtu.be/FJfWQKXyWXc - Video of app running on Goerli network.
 https://youtu.be/t1QzNfeVjgM - Video of app running on local Ganache network.
