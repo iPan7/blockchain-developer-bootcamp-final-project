@@ -1,9 +1,5 @@
 # Final project - SALT COIN
 
-## Deployed version url:
-
-
-
 ## How to run this project locally:
 
 ### Prerequisites
@@ -63,6 +59,9 @@ Simple dApp that creates a new crypto currency and has a Payment-layer on top of
 - `migrations`: Migration files for deploying contracts in `contracts` directory.
 - `test`: Tests for smart contracts.
 
+## Deployed version url:
+
+https://salt-coin.herokuapp.com
 
 ## TODO features
 
