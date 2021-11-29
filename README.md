@@ -7,6 +7,7 @@
 - Node.js
 - Truffle
 - Ganache
+- .env file with declared MNEMONIC
 
 ### Contracts
 
@@ -19,7 +20,6 @@
 
 ### Frontend
 
-- `cd client`
 - npm run start
 - Open `http://localhost:3000`
 
