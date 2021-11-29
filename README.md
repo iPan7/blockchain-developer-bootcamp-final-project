@@ -7,7 +7,7 @@
 - Node.js
 - Truffle
 - Ganache
-- .env file with declared MNEMONIC
+- .env file with declared MNEMONIC = `enter seed phrase`
 
 ### Contracts
 
