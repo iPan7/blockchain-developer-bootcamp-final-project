@@ -27,8 +27,10 @@ MNEMONIC = `enter seed phrase`
 
 ### How to use the app
 
+- Make sure contracts are compiled and migrated and that you have a .env file with your metamask wallet MNEMONIC in the root directory.
 - Open local ui from `http://localhost:3000`
 - Make sure your Metamask localhost network is in port `7545` and chain id is `5777`.
+- Follow the Simple Workflow outlined below.
 
 ## Screencast links
 
